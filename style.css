@@ -1,0 +1,70 @@
+body {
+	margin-top: 7%;
+	background-color: #e3dbdb;
+}
+
+h1 {
+	text-align: center;
+	text-decoration: underline;
+	font-family: 'Bodoni MT';
+	color: #592e2e;
+	margin: 40px;
+}
+
+form {
+	width: 25%;
+	margin: auto;
+}
+
+form li {
+	list-style: none;
+}
+
+input {
+	border: 1px solid;
+	padding: 10px;
+	width: 400px;
+	height: 30px;
+	margin: 15px;
+}
+
+input[type=submit] {
+	display: block;
+	margin: auto;
+	margin-top: 15px;
+	width: 150px;
+	height: 50px;
+	border: 1px solid;
+	font-size: 14px;
+	background-color: #eeeded;
+}
+
+
+/* numero SIRET*/
+
+
+/* Firefox */
+
+input[type=number] {
+	-moz-appearance: textfield;
+}
+
+
+/* Chrome */
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+
+/* Opéra*/
+
+input::-o-inner-spin-button,
+input::-o-outer-spin-button {
+	-o-appearance: none;
+	margin: 0
+}
+
+/* numero SIRET*/
