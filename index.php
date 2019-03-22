@@ -12,9 +12,13 @@
 
 	<body>
 				<nav>
-				    <ul>
+				    <ul id ="inscription"> Inscription
 				        <li><a href="Subscribe/inscriptionEnt.php">Entreprise</a></li>
 				        <li><a href="Subscribe/inscriptionPro.php">Profesional</a></li>
+				    </ul>
+				    <ul id ="connexion"> Connexion
+				        <li><a href="Subscribe/connexionEnt.php">Entreprise</a></li>
+				        <li><a href="Subscribe/connexionPro.php">Profesional</a></li>
 				    </ul>
 				</nav>
 			</header>

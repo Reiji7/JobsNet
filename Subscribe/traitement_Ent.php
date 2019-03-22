@@ -5,10 +5,10 @@
 		if($_POST["pass"] === $_POST["pass2"]){
 
 			/* Recuperation des saisis utilisateurs */
-      $name = $pdo -> quote($_POST["name"]);
-      $siret = $pdo -> quote($_POST["siret"]);
-      $mail = $pdo -> quote($_POST["mail"]);
-      $pass = $pdo -> quote(hash_password($_POST["pass"]));
+			$name = $pdo -> quote($_POST["name"]);
+			$siret = $pdo -> quote($_POST["siret"]);
+			$mail = $pdo -> quote($_POST["mail"]);
+			$pass = $pdo -> quote(hash_password($_POST["pass"]));
 
 			/* Verifie la disponibilité du login */
 			$sql = "SELECT siret FROM $table WHERE siret = $siret";
@@ -18,10 +18,10 @@
 			if($row == 0){
 				/* Inscription dans la base de donne */
 				$sql = "INSERT INTO $table (name, siret, mail, password)
-          VALUES ($name , $siret, $mail, $pass)";
+	      VALUES ($name , $siret, $mail, $pass)";
 
-        $pdo -> query($sql);
-        header("location: Contact.php");
+		        $pdo -> query($sql);
+		        header("location: ../index.php");
 			}
 
 			/* login deja utiliser */
@@ -36,5 +36,4 @@
 			$_SESSION['id']= 6;
 			header("location: index.php");
 		}
-
 ?>

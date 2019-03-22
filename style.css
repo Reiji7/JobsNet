@@ -11,6 +11,19 @@ h1 {
 	margin: 40px;
 }
 
+#inscription
+{
+	/*border: 5px solid red;*/
+	margin-top: -6%;
+	margin-left: 85%;
+}
+#connexion
+{
+	/*border: 5px solid green;*/
+	margin-top: -5.35%;
+	margin-left: 75%;
+}
+
 form {
 	width: 25%;
 	margin: auto;

@@ -1,9 +1,9 @@
 <?php
    	include("../Page/conf.php");
-    $table = "Profesional";
+    $table = "profesional";
+
 
 		if($_POST["pass"] === $_POST["pass2"]){
-
 			/* Recuperation des saisis utilisateurs */
       $name = $pdo -> quote($_POST["name"]);
       $surname = $pdo -> quote($_POST["surname"]);
@@ -13,6 +13,7 @@
 
 			/* Verifie la disponibilité du login */
 			$sql = "SELECT mail FROM $table WHERE mail = $mail";
+			echo $sql;
 			$row = $pdo -> query($sql);
 			$row = $row -> rowCount();
 
@@ -21,8 +22,8 @@
 				$sql = "INSERT INTO $table (name, surname, tel, mail, pass)
           VALUES ($name , $surname, $tel, $mail, $pass)";
 
-        $pdo -> query($sql);
-        header("location: Contact.php");
+	 			$pdo -> query($sql);
+    			header("location: ../index.php");
 			}
 
 			/* login deja utiliser */

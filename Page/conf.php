@@ -3,10 +3,10 @@
 session_start();
 
 /* Variables de connexion */
-$serveur = "localhost:8888";
-$log = "root";
-$password = "";
-$base = "Projet Info";
+$serveur = "localhost";
+$log = "christian";
+$password = "test";
+$base = "projet_info";
 $table = "enterprise";
 $_SESSION['id'] = 0;
 
